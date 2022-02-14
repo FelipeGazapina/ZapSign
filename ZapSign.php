@@ -4,8 +4,8 @@ interface CZapSign{
 
 	function newContract (Array $data, String $route, String $method):Array;
 
-	private function set_post($curl,String $post,String $route, String $method);
-	private function set_get($curl,String $data,String $route, String $method);
+	function set_post($curl,String $post,String $route, String $method);
+	function set_get($curl,String $data,String $route, String $method);
 
 }
 
